@@ -1,0 +1,34 @@
+{
+  "name": "@treedys/postpack",
+  "version": "1.0.0",
+  "description": "NPM postpack hook for package.json cleaning",
+  "main": "index.js",
+  "bin": {
+    "postpack": "./index.js"
+  },
+  "scripts": {
+    "prepack": "npm install",
+    "postpack": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treedys/postpack.git"
+  },
+  "keywords": [
+    "postpack",
+    "package.json",
+    "cleanup"
+  ],
+  "author": "Atanas Palavrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treedys/postpack/issues"
+  },
+  "homepage": "https://github.com/treedys/postpack#readme",
+  "dependencies": {
+    "get-stream": "^5.1.0",
+    "move-concurrently": "^1.0.1",
+    "tar-stream": "^2.1.0",
+    "tmp": "^0.1.0"
+  }
+}
