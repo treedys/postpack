@@ -1,6 +1,6 @@
 {
   "name": "@treedys/postpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NPM postpack hook for package.json cleaning",
   "main": "index.js",
   "bin": {

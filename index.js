@@ -90,11 +90,14 @@ extract.on('entry', async (header, stream, next) => {
 
 extract.on('finish', async () => {
     pack.finalize();
-    await move(tmpTgz, target);
 });
 
 const readStream = fs.createReadStream(target);
 const writeStream = fs.createWriteStream(tmpTgz);
+
+writeStream.on('close', async () => {
+    await move(tmpTgz, target);
+});
 
 readStream.pipe(gunzip()).pipe(extract);
 pack.pipe(gzip()).pipe(writeStream);
