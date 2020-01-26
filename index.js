@@ -81,8 +81,8 @@ extract.on('entry', async (header, stream, next) => {
 
         const newPackageJson = JSON.stringify(newPackage, null, 2)+os.EOL;
 
-        header.size = newPackageJson.length;
-        pack.entry(header, newPackageJson, next);
+        // FIXME: https://github.com/mafintosh/tar-stream/issues/110
+        pack.entry({ ...header}, newPackageJson, next);
     } else {
         stream.pipe(pack.entry(header, next));
     }
