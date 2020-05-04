@@ -29,6 +29,6 @@
     "get-stream": "^5.1.0",
     "move-concurrently": "^1.0.1",
     "tar-stream": "^2.1.0",
-    "tmp": "^0.1.0"
+    "tmp": "^0.2.1"
   }
 }
