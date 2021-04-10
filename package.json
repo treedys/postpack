@@ -1,6 +1,6 @@
 {
   "name": "@treedys/postpack",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NPM postpack hook for package.json cleaning",
   "main": "index.js",
   "bin": {
@@ -28,7 +28,7 @@
   "dependencies": {
     "get-stream": "^6.0.0",
     "move-concurrently": "^1.0.1",
-    "tar-stream": "^2.1.4",
+    "tar-stream": "^2.2.0",
     "tmp": "^0.2.1"
   }
 }
