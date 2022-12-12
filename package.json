@@ -28,7 +28,7 @@
   "dependencies": {
     "get-stream": "^6.0.1",
     "move-concurrently": "^1.0.1",
-    "tar-stream": "^2.2.0",
+    "tar-stream": "^3.0.0",
     "tmp": "^0.2.1"
   }
 }
